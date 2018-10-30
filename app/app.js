@@ -19,9 +19,11 @@ angular.module('myTodoListApp', [])
 		$scope.doneList = [];
 
 		$scope.addNewTask = function() {
-			var newTask = {title: $scope.newTask, done: false};
-			$scope.list.push(newTask);
-			clearNewTask();
+			if ($scope.newTask.length !== 0) {
+				var newTask = {title: $scope.newTask, done: false};
+				$scope.list.push(newTask);
+				clearNewTask();
+			}
 		}
 
 		$scope.markTaskAsDone = function(index) {
