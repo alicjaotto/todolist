@@ -20,12 +20,10 @@
 	function singleTaskController($scope) {
 
 		$scope.delete = function() {
-			console.log('Delete!')
 			$scope.deleteTaskCallback();
 		};
 
 		$scope.done = function() {
-			console.log('done!');
 			$scope.markTaskAsDoneCallback();
 		};
 	};
