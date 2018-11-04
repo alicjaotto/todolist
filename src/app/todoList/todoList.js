@@ -7,7 +7,7 @@
 				restrict: 'E',
 				transclude: true,
 				scope: {},
-				templateUrl: '/app/todoList/todoList.html',
+				templateUrl: '/src/app/todoList/todoList.html',
 				controller: todoListController,
 			};
 	});

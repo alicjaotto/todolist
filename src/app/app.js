@@ -2,7 +2,12 @@
 	'use strict';
 
 	angular.module('app', [])
-		.component('app', {
-			templateUrl: '/app/app.html'
+		.directive('app', function() {
+			return {
+				restrict: 'E',
+				transclude: true,
+				scope: {},
+				templateUrl: '/src/app/app.html'
+			}
 		});
 })(window.angular);

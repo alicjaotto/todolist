@@ -12,7 +12,7 @@
 					deleteTaskCallback: '&',
 					markTaskAsDoneCallback: '&'
 				},
-				templateUrl: '/app/todoList/singleTask/singleTask.html',
+				templateUrl: '/src/app/todoList/singleTask/singleTask.html',
 				controller: singleTaskController,
 			};
 	});

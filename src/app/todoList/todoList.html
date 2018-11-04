@@ -9,7 +9,7 @@
 <section id="list">
 	<single-task ng-repeat="task in list track by $index"
 		title="task.title"
-		index="$index"
+		index="{{$index}}"
 		mark-task-as-done-callback="markTaskAsDone($index)"
 		delete-task-callback="deleteTask($ndex)">
 	</single-task>
