@@ -1,0 +1,25 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "todo list in AngularJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alicjaotto/todolist.git"
+  },
+  "author": "Alicja Otto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alicjaotto/todolist/issues"
+  },
+  "homepage": "https://github.com/alicjaotto/todolist#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-less": "^4.0.1"
+  }
+}

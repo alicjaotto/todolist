@@ -1,0 +1,42 @@
+<section id="remaining">
+	<div>
+		<span class="">I have
+			<span class="">{{list.length}}</span>
+			tasks to do
+		</span>
+	</div>
+</section>
+<section id="list">
+	<single-task ng-repeat="task in list track by $index"
+		title="task.title"
+		index="$index"
+		mark-task-as-done-callback="markTaskAsDone($index)"
+		delete-task-callback="deleteTask($ndex)">
+	</single-task>
+<section id="add">
+	<div>
+		<div>add new task to do</div>
+		<form class="">
+			<input type="text"
+				placeholder="what is your new task?"
+				ng-model="newTask"/>
+			<button type="submit"
+				ng-click="addNewTask()"
+				id="addNewTaskButton">
+				add
+			</button>
+		</form>
+	</div>
+</section>
+<section id="doneList">
+	<div>my done tasks</div>
+	<ul>
+		<li ng-repeat="task in doneList track by $index">
+			{{task.title}}
+			<span class=""
+				ng-if="task.done">
+				v
+			</span>
+		</li>
+	</ul>
+</section>

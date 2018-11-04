@@ -1,5 +1,18 @@
-angular.module('myTodoListApp', [])
-	.controller('myTodoListController', function($scope) {
+(function(angular) {
+	'use strict';
+
+	angular.module('app')
+		.directive('todoList', function () {
+			return {
+				restrict: 'E',
+				transclude: true,
+				scope: {},
+				templateUrl: '/app/todoList/todoList.html',
+				controller: todoListController,
+			};
+	});
+
+	function todoListController($scope) {
 
 		$scope.list = [
 			{
@@ -33,7 +46,12 @@ angular.module('myTodoListApp', [])
 			$scope.list.splice(index, 1);
 		}
 
+		$scope.deleteTask = function(index) {
+			$scope.list.splice(index, 1);
+		}
+
 		function clearNewTask() {
 			$scope.newTask = '';
 		}
-});
+	};
+})(window.angular);
