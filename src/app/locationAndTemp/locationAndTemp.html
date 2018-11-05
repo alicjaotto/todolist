@@ -1,8 +1,12 @@
 <div class="">
-	<div id="location">
+	<div id="location"
+		ng-if="location">
 		{{location}}
 	</div>
-	<div id="temp">
+	<div id="temp"
+		ng-if="temp">
 		{{temp}}°C
+	</div>
+	<div id="location-error">
 	</div>
 </div>
