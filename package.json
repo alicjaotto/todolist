@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/alicjaotto/todolist#readme",
   "devDependencies": {
+    "angular": "^1.7.5",
     "gulp": "^4.0.0"
   },
   "dependencies": {
