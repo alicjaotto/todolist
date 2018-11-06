@@ -1,0 +1,39 @@
+.service-data,
+.todo-list {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.service-data {
+	justify-content: space-between;
+	color: @color-primary;
+}
+
+.service-data__location-and-temp__wrapper {
+	text-align: right;
+}
+
+.service-data__time-and-date__wrapper {
+	text-align: left;
+}
+
+.service-data__location-and-temp__wrapper__location,
+.service-data__time-and-date__wrapper__date {
+	font-size: 3rem;
+	font-weight: 300;
+	margin-top: -1.4rem;
+}
+
+.service-data__location-and-temp__wrapper__temp,
+.service-data__time-and-date__wrapper__time {
+	font-size: 4.4rem;
+}
+
+.copyright__text {
+	width: 100%;
+	text-align: center;
+	color: @color-primary;
+	margin-bottom: 1rem;
+}

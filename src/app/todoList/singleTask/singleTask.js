@@ -9,6 +9,7 @@
 				scope: {
 					title: '<',
 					index: '@',
+					taskDone: '<',
 					deleteTaskCallback: '&',
 					markTaskAsDoneCallback: '&'
 				},
@@ -26,5 +27,9 @@
 		$scope.done = function() {
 			$scope.markTaskAsDoneCallback();
 		};
+
+		$scope.isTaskDone = function() {
+			return $scope.taskDone === true;
+		}
 	};
 })(window.angular);

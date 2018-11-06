@@ -20,16 +20,21 @@
 				done: false
 			},
 			{
-				title: 'make my application beautiful and user-friendly',
+				title: 'make my application works!',
 				done: false
 			},
 			{
-				title: 'Make my application works',
+				title: 'set proper title for 1 or 0 tasks to do',
 				done: false
 			}
 		];
 
-		$scope.doneList = [];
+		$scope.doneList = [
+			{
+				title: 'make my application beautiful and user-friendly',
+				done: true
+			}
+		];
 
 		$scope.addNewTask = function() {
 			if ($scope.newTask.length !== 0) {

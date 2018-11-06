@@ -1,0 +1,84 @@
+.single-task__wrapper {
+	margin: 1rem 0 0 1.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.single-task__wrapper__text {
+	width: 80%;
+
+	span {
+		font-size: @text-size-normal;
+		font-weight: lighter;
+		opacity: .8;
+	}
+}
+
+.single-task__wrapper__buttons {
+	margin: .2rem 0 0 1.4rem;
+	width: 18%;
+
+}
+
+.single-task__wrapper__buttons__done,
+.single-task__wrapper__buttons__delete {
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 50%;
+	padding-top: .2rem;
+}
+
+.single-task__wrapper__buttons__done {
+	background-color: rgba(112,3,237,1);
+
+	&::after {
+		width: 1rem;
+		height: 1rem;
+		display: inline-block;
+		content: '';
+		background-image: url('../img/check-mark.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&:hover {
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(112,3,237,0.75);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(112,3,237,0.75);
+		box-shadow: 0px 0px 5px 0px rgba(112,3,237,0.75);
+	}
+}
+
+.single-task__wrapper__buttons__delete {
+	background-color: rgba(252,42,154,1);
+
+	&::after {
+		width: .9rem;
+		height: .9rem;
+		display: inline-block;
+		content: '';
+		background-image: url('../img/cancel-mark.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	&:hover {
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(252,42,154,0.75);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(252,42,154,0.75);
+		box-shadow: 0px 0px 5px 0px rgba(252,42,154,0.75);
+	}
+}
+
+.single-task__wrapper__text__check-mark {
+	margin-right: 1rem;
+
+	&::after {
+		width: 1.2rem;
+		height: 1.2rem;
+		display: inline-block;
+		content: '';
+		background-image: url('../img/check-mark-purple.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}

@@ -1,12 +1,13 @@
-<div class="">
-	<div id="location"
-		ng-if="location">
-		{{location}}
-	</div>
+<div class="service-data__location-and-temp__wrapper">
 	<div id="temp"
-		ng-if="temp">
+		ng-if="temp"
+		class="service-data__location-and-temp__wrapper__temp">
 		{{temp}}°C
 	</div>
-	<div id="location-error">
+	<div id="location"
+		ng-if="location"
+		class="service-data__location-and-temp__wrapper__location">
+		{{location}}
 	</div>
+	<div id="location-error"></div>
 </div>

@@ -1,0 +1,224 @@
+/*reset*/
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  outline: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+html,
+body {
+  min-height: 100vh;
+  overflow: auto;
+}
+.gradient,
+html {
+  background: #7003ed;
+  background: -moz-linear-gradient(-45deg, #7003ed 0%, #fc2a9a 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #7003ed), color-stop(100%, #fc2a9a));
+  background: -webkit-linear-gradient(-45deg, #7003ed 0%, #fc2a9a 100%);
+  background: -o-linear-gradient(-45deg, #7003ed 0%, #fc2a9a 100%);
+  background: -ms-linear-gradient(-45deg, #7003ed 0%, #fc2a9a 100%);
+  background: linear-gradient(135deg, #7003ed 0%, #fc2a9a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7003ed', endColorstr='#fc2a9a', GradientType=1);
+}
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 3.5rem;
+}
+/*media*/
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 8px;
+  }
+  .container {
+    width: auto;
+    margin: 2rem;
+  }
+}
+.service-data,
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.service-data {
+  justify-content: space-between;
+  color: #fff;
+}
+.service-data__location-and-temp__wrapper {
+  text-align: right;
+}
+.service-data__time-and-date__wrapper {
+  text-align: left;
+}
+.service-data__location-and-temp__wrapper__location,
+.service-data__time-and-date__wrapper__date {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: -1.4rem;
+}
+.service-data__location-and-temp__wrapper__temp,
+.service-data__time-and-date__wrapper__time {
+  font-size: 4.4rem;
+}
+.copyright__text {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.abstract__todo-list__element__title,
+.todo-list__wrapper__content__todo-tasks__title,
+.todo-list__wrapper__content__done-tasks__title,
+.todo-list__wrapper__content__form__title {
+  font-size: 2.2rem;
+  color: #434343;
+  text-transform: uppercase;
+}
+.todo-list {
+  justify-content: center;
+  margin: 3rem 0;
+}
+.todo-list__wrapper {
+  width: 35rem;
+  border-radius: 4rem;
+  padding: 1rem;
+  height: auto;
+  background: #c3c3c3;
+  background: linear-gradient(175deg, #c3c3c3 0%, #e6e6e6 50%, #c3c3c3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: inset 0px 0px 5px 0px #ffffff;
+  -moz-box-shadow: inset 0px 0px 5px 0px #ffffff;
+  box-shadow: inset 0px 0px 5px 0px #ffffff;
+}
+.todo-list__wrapper__content {
+  background-color: #fff;
+  border-radius: 1rem;
+  min-height: 43rem;
+  width: 33rem;
+  padding: 2rem;
+}
+.todo-list__wrapper__content__todo-tasks {
+  min-height: 18rem;
+}
+.todo-list__wrapper__content__todo-tasks__title .todo-list__wrapper__content__todo-tasks__title__count {
+  font-size: inherit;
+}
+.todo-list__wrapper__content__form {
+  position: relative;
+  margin: 1rem 0;
+}
+.todo-list__wrapper__content__form__input {
+  width: 100%;
+  border: none;
+  height: 3.6rem;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1.2rem 0.6rem;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+.todo-list__wrapper__content__form__input:focus {
+  -webkit-box-shadow: inset 0px 0px 3px 0px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: inset 0px 0px 3px 0px rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0px 0px 3px 0px rgba(255, 255, 255, 0.8);
+}
+.todo-list__wrapper__content__form__button {
+  position: absolute;
+  top: 3.2rem;
+  right: 0.6rem;
+  width: 3.2rem;
+  font-size: 3.2rem;
+  background: transparent;
+  color: #fff;
+}
+.single-task__wrapper {
+  margin: 1rem 0 0 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single-task__wrapper__text {
+  width: 80%;
+}
+.single-task__wrapper__text span {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.single-task__wrapper__buttons {
+  margin: 0.2rem 0 0 1.4rem;
+  width: 18%;
+}
+.single-task__wrapper__buttons__done,
+.single-task__wrapper__buttons__delete {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  padding-top: 0.2rem;
+}
+.single-task__wrapper__buttons__done {
+  background-color: #7003ed;
+}
+.single-task__wrapper__buttons__done::after {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  content: '';
+  background-image: url('../img/check-mark.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.single-task__wrapper__buttons__done:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(112, 3, 237, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(112, 3, 237, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(112, 3, 237, 0.75);
+}
+.single-task__wrapper__buttons__delete {
+  background-color: #fc2a9a;
+}
+.single-task__wrapper__buttons__delete::after {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: inline-block;
+  content: '';
+  background-image: url('../img/cancel-mark.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.single-task__wrapper__buttons__delete:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(252, 42, 154, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(252, 42, 154, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(252, 42, 154, 0.75);
+}
+.single-task__wrapper__text__check-mark {
+  margin-right: 1rem;
+}
+.single-task__wrapper__text__check-mark::after {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  content: '';
+  background-image: url('../img/check-mark-purple.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

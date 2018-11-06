@@ -1,18 +1,21 @@
-<div class="">
-	<span>
-		{{::title}}
-	</span>
-
-	<button
-		type="button"
-		ng-click="done()"
-		id="markTaskAsDoneButton-{{::index}}">
-		<span>V</span>
-	</button>
-	<button
-		type="button"
-		ng-click="delete()"
-		id="markTaskAsDoneButton-{{::index}}">
-		<span>X</span>
-	</button>
+<div class="single-task__wrapper">
+	<div class="single-task__wrapper__text">
+		<span ng-if="isTaskDone()"
+			class="single-task__wrapper__text__check-mark">
+		</span>
+		<span>{{::title}}</span>
+	</div>
+	<div ng-if="!isTaskDone()"
+		class="single-task__wrapper__buttons">
+		<button class="single-task__wrapper__buttons__done"
+			type="button"
+			ng-click="done()"
+			id="markTaskAsDoneButton-{{::index}}">
+		</button>
+		<button class="single-task__wrapper__buttons__delete"
+			type="button"
+			ng-click="delete()"
+			id="markTaskAsDoneButton-{{::index}}">
+		</button>
+	</div>
 </div>

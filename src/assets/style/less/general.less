@@ -1,0 +1,59 @@
+/*reset*/
+* {
+	box-sizing: border-box;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	outline: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+html, body{
+	min-height: 100vh;
+	overflow: auto;
+}
+
+.gradient {
+	background: rgba(112,3,237,1);
+	background: -moz-linear-gradient(-45deg, rgba(112,3,237,1) 0%, rgba(252,42,154,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(112,3,237,1)), color-stop(100%, rgba(252,42,154,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(112,3,237,1) 0%, rgba(252,42,154,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(112,3,237,1) 0%, rgba(252,42,154,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(112,3,237,1) 0%, rgba(252,42,154,1) 100%);
+	background: linear-gradient(135deg, rgba(112,3,237,1) 0%, rgba(252,42,154,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7003ed', endColorstr='#fc2a9a', GradientType=1 );
+}
+
+html {
+	&:extend(.gradient);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+button {
+	cursor: pointer;
+}
+
+.container {
+	width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 3.5rem;
+}
+
+/*media*/
+@media only screen and (max-width : 768px) {
+	* {
+		font-size: 8px;
+	}
+
+	.container {
+		width: auto;
+		margin: 2rem;
+	}
+}

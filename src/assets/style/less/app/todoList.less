@@ -1,0 +1,84 @@
+.abstract__todo-list__element__title {
+	font-size: @text-size-big;
+	color: @color-secondary;
+	text-transform: uppercase;
+}
+
+.todo-list {
+	justify-content: center;
+	margin: 3rem 0;
+}
+
+.todo-list__wrapper {
+	width: 35rem;
+	border-radius: 4rem;
+	padding: 1rem;
+	height: auto;
+	background: rgb(195,195,195);
+	background: linear-gradient(175deg, rgba(195,195,195,1) 0%, rgba(230,230,230,1) 50%, rgba(195,195,195,1) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 5px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 5px 0px rgba(255,255,255,1);
+}
+
+.todo-list__wrapper__content {
+	background-color: @color-primary;
+	border-radius: 1rem;
+	min-height: 43rem;
+	width: 33rem;
+	padding: 2rem;
+}
+
+.todo-list__wrapper__content__todo-tasks {
+	min-height: 18rem;
+}
+.todo-list__wrapper__content__todo-tasks__title {
+	&:extend(.abstract__todo-list__element__title);
+
+	.todo-list__wrapper__content__todo-tasks__title__count {
+		font-size: inherit;
+	}
+}
+
+.todo-list__wrapper__content__done-tasks__title {
+	&:extend(.abstract__todo-list__element__title);
+}
+
+.todo-list__wrapper__content__form__title {
+	&:extend(.abstract__todo-list__element__title);
+}
+
+.todo-list__wrapper__content__form {
+	position: relative;
+	margin: 1rem 0;
+}
+
+.todo-list__wrapper__content__form__input {
+	width: 100%;
+	border: none;
+	height: 3.6rem;
+	color: @color-primary;
+	border-radius: 5px;
+	padding: 1.2rem .6rem;
+	margin: 1rem 0;
+	font-size: @text-size-normal;
+
+	&:focus {
+		-webkit-box-shadow: inset 0px 0px 3px 0px rgba(255,255,255,0.8);
+		-moz-box-shadow: inset 0px 0px 3px 0px rgba(255,255,255,0.8);
+		box-shadow: inset 0px 0px 3px 0px rgba(255,255,255,0.8);
+	}
+}
+
+.todo-list__wrapper__content__form__button {
+	position: absolute;
+	top: 3.2rem;
+	right: .6rem;
+	width: 3.2rem;
+	font-size: 3.2rem;
+	background: transparent;
+	color: @color-primary;
+}
