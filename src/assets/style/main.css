@@ -34,12 +34,25 @@ html {
 button {
   cursor: pointer;
 }
+::-webkit-input-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #fff;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #fff;
+}
 .container {
   width: 1000px;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
-  margin-top: 3.5rem;
 }
 /*media*/
 @media only screen and (max-width: 768px) {
@@ -48,7 +61,6 @@ button {
   }
   .container {
     width: auto;
-    margin: 2rem;
   }
 }
 .service-data,
@@ -61,6 +73,7 @@ button {
 .service-data {
   justify-content: space-between;
   color: #fff;
+  margin-top: 2rem;
 }
 .service-data__location-and-temp__wrapper {
   text-align: right;
@@ -76,13 +89,19 @@ button {
 }
 .service-data__location-and-temp__wrapper__temp,
 .service-data__time-and-date__wrapper__time {
-  font-size: 4.4rem;
+  font-size: 4.8rem;
 }
 .copyright__text {
   width: 100%;
   text-align: center;
   color: #fff;
   margin-bottom: 1rem;
+}
+/*media*/
+@media only screen and (max-width: 768px) {
+  .service-data {
+    margin-top: 1rem;
+  }
 }
 .abstract__todo-list__element__title,
 .todo-list__wrapper__content__todo-tasks__title,

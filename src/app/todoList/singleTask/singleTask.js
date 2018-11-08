@@ -1,8 +1,8 @@
-(function(angular) {
-	'use strict';
+var angular = require('angular');
 
 	angular.module('app')
 		.directive('singleTask', function () {
+			'use strict';
 			return {
 				restrict: 'E',
 				transclude: true,
@@ -13,7 +13,7 @@
 					deleteTaskCallback: '&',
 					markTaskAsDoneCallback: '&'
 				},
-				templateUrl: '/src/app/todoList/singleTask/singleTask.html',
+				templateUrl: '/todoList/singleTask/singleTask.html',
 				controller: singleTaskController,
 			};
 	});
@@ -32,4 +32,3 @@
 			return $scope.taskDone === true;
 		}
 	};
-})(window.angular);

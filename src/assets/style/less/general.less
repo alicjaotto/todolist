@@ -38,12 +38,16 @@ button {
 	cursor: pointer;
 }
 
+::-webkit-input-placeholder {color: @color-primary;}
+::-moz-placeholder          {color: @color-primary;} /* Firefox 19+ */
+:-moz-placeholder           {color: @color-primary;} /* Firefox 18- */
+:-ms-input-placeholder      {color: @color-primary;}
+
 .container {
 	width: 1000px;
 	overflow: hidden;
 	margin: 0 auto;
 	position: relative;
-	margin-top: 3.5rem;
 }
 
 /*media*/
@@ -54,6 +58,5 @@ button {
 
 	.container {
 		width: auto;
-		margin: 2rem;
 	}
 }

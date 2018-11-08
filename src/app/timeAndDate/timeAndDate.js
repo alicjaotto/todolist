@@ -1,12 +1,12 @@
-(function(angular) {
-	'use strict';
+var angular = require('angular');
 
 	angular.module('app')
 		.directive('timeAndDate', function() {
+			'use strict';
 			return {
 				restrict: 'E',
 				transclude: true,
-				templateUrl: '/src/app/timeAndDate/timeAndDate.html',
+				templateUrl: '/timeAndDate/timeAndDate.html',
 				controller: timeAndDateController
 			};
 		});
@@ -23,4 +23,3 @@
 
 			$scope.updateTime();
 		}
-})(window.angular);

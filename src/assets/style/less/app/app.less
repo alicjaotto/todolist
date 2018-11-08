@@ -9,6 +9,7 @@
 .service-data {
 	justify-content: space-between;
 	color: @color-primary;
+	margin-top: 2rem;
 }
 
 .service-data__location-and-temp__wrapper {
@@ -28,7 +29,7 @@
 
 .service-data__location-and-temp__wrapper__temp,
 .service-data__time-and-date__wrapper__time {
-	font-size: 4.4rem;
+	font-size: 4.8rem;
 }
 
 .copyright__text {
@@ -36,4 +37,12 @@
 	text-align: center;
 	color: @color-primary;
 	margin-bottom: 1rem;
+}
+
+/*media*/
+@media only screen and (max-width : 768px) {
+
+	.service-data {
+		margin-top: 1rem;
+	}
 }

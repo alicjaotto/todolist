@@ -1,13 +1,13 @@
-(function(angular) {
-	'use strict';
+var angular = require('angular');
 
 	angular.module('app')
 		.directive('todoList', function () {
+			'use strict';
 			return {
 				restrict: 'E',
 				transclude: true,
 				scope: {},
-				templateUrl: '/src/app/todoList/todoList.html',
+				templateUrl: '/todoList/todoList.html',
 				controller: todoListController,
 			};
 	});
@@ -59,4 +59,3 @@
 			$scope.newTask = '';
 		}
 	};
-})(window.angular);

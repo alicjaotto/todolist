@@ -1,4 +1,4 @@
-(function(angular) {
+(function() {
 	'use strict';
 
 	// angular.module('app')
@@ -20,4 +20,4 @@
 	// 			getWeather: getWeather
 	// 		};
 	// 	}]);
-})(window.angular);
+})();

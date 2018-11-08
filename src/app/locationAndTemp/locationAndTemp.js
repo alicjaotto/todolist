@@ -1,12 +1,12 @@
-(function(angular) {
-	'use strict';
+var angular = require('angular');
 
 	angular.module('app')
 		.directive('locationAndTemp', function() {
+			'use strict';
 			return {
 				restrict: 'E',
 				transclude: true,
-				templateUrl: '/src/app/locationAndTemp/locationAndTemp.html',
+				templateUrl: '/locationAndTemp/locationAndTemp.html',
 				controller: locationAndTempController
 			};
 		});
@@ -36,4 +36,3 @@
 					}));
 			}
 		}
-})(window.angular);
